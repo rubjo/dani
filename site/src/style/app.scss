@@ -1,0 +1,17 @@
+// CSS Reset/normalize
+@import 'reset';
+
+// Import fonts
+@import 'fonts';
+
+// Import other CSS variables, set PrimeVue variables overrides
+@import 'variables';
+
+// Import main rules for app framework (body/main menu/content areas)
+@import 'framework';
+
+// Import PrimeFlex CSS utility framework (https://primeflex.org/)
+@import 'primeflex/primeflex.min.css';
+
+// Other additions
+@import 'additions';

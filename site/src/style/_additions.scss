@@ -1,0 +1,90 @@
+/* stylelint-disable property-no-vendor-prefix */
+// Any additions or overrides here
+.content a {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--primary);
+  text-underline-offset: 2px;
+  color: var(--primary);
+  transition: text-shadow 0.25s;
+
+  &:hover {
+    text-shadow: 0 0 15px var(--code-function-name-glow);
+    -webkit-text-fill-color: unset;
+    text-decoration-thickness: 1.5px;
+  }
+}
+
+svg {
+  stroke-width: 0.05rem;
+}
+
+.p-component svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 80%;
+  color: var(--low-contrast);
+  display: flex;
+  align-items: center;
+
+  > svg {
+    height: 1em;
+    width: 1em;
+    margin-right: 0.25rem;
+  }
+}
+
+.p-button {
+  box-shadow: -2px -2px 4px rgba(255, 255, 255, 0.025), 2px 2px 4px rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s;
+
+  &:enabled:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.25);
+  }
+
+  &:enabled:active {
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.075), 2px 2px 4px rgba(255, 255, 255, 0.025);
+    transition-duration: 0.1s;
+  }
+}
+
+.p-message-text {
+  flex: 1;
+  font-weight: inherit;
+}
+
+.p-slider-handle::before {
+  display: none;
+}
+
+.p-tooltip {
+  font-size: 0.75rem;
+}
+
+code,
+pre {
+  background-color: var(--code-bg-primary);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius-small);
+  font-size: 18px;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  25% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  50% { transform: scale(0.98); }
+  100% { transform: scale(1); }
+}

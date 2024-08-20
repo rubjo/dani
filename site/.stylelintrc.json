@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-recommended-vue"
+  ],
+  "files": ["**/*.scss"],
+  "rules": {
+    "selector-class-pattern": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "max-nesting-depth": 3,
+    "@stylistic/declaration-block-trailing-semicolon": null,
+    "@stylistic/function-parentheses-space-inside": null
+  }
+}

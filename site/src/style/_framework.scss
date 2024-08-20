@@ -1,0 +1,76 @@
+html {
+  font-size: 140%;
+  line-height: 1.5;
+
+  &.theme-in-transition,
+  &.theme-in-transition *,
+  &.theme-in-transition *::before,
+  &.theme-in-transition *::after {
+    transition: color 0.1s, border 0.5s, background 0.5s, left 0.5s, width 0.5s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-family);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body,
+input,
+textarea,
+button {
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1rem;
+}
+
+.p-tooltip {
+  z-index: 1002;
+}
+
+.content {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  padding: 1rem 2rem;
+  position: relative;
+  overflow: hidden auto;
+  transition: margin 0.3s ease;
+  margin-left: 250px;
+
+  &.desktop {
+    margin-left: 250px;
+  }
+
+  &.collapsed {
+    margin-left: 65px;
+  }
+
+  &.wide {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .content {
+    margin-left: 0;
+    padding: 0 1rem 5rem;
+  }
+}

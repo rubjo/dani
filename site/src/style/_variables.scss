@@ -1,0 +1,60 @@
+:root {
+  --font-family:
+    'Jost',
+    -apple-system,
+    blinkmacsystemfont,
+    segoe ui,
+    roboto,
+    helvetica,
+    arial,
+    sans-serif,
+    apple color emoji,
+    segoe ui emoji,
+    segoe ui symbol;
+  --font-family-mono: 'Victor Mono', monospace;
+  --content-padding: 1rem;
+  --inline-spacing: 0.5rem;
+  --border-radius: 10px;
+  --border-radius-small: 4px;
+  --border-radius-buttons: 50px;
+  --maskbg: rgb(0 0 0 / 40%);
+  --success: var(--p-green-600);
+  --info: var(--p-blue-600);
+  --warning: var(--p-yellow-500);
+  --danger: var(--p-red-600);
+
+  // Overrides for Primevue Aura preset
+
+  // Button
+  --p-button-primary-background: var(--ui-element);
+  --p-button-primary-color: var(--text-primary);
+  --p-button-primary-border-color: transparent;
+  --p-button-primary-hover-background: var(--ui-element-hover);
+  --p-button-primary-hover-color: var(--text-primary);
+  --p-button-primary-hover-border-color: transparent;
+  --p-button-primary-active-background: var(--ui-element-hover);
+  --p-button-primary-active-color: var(--text-primary);
+  --p-button-primary-active-border-color: transparent;
+  --p-button-border-radius: var(--border-radius-buttons);
+  --p-button-label-font-weight: 300;
+
+  // Popover
+  --p-popover-background: var(--ui-overlay);
+  --p-popover-color: var(--text-primary);
+  --p-popover-border-color: transparent;
+  --p-popover-border-radius: var(--border-radius-small);
+  --p-popover-shadow:  0 11px 15px -7px rgb(0 0 0 / 20%),
+    0 24px 38px 3px rgb(0 0 0 / 14%),
+    0 9px 46px 8px rgb(0 0 0 / 12%);
+
+  // Message
+  --p-message-secondary-background: var(--bg-secondary);
+  --p-message-secondary-color: var(--text-primary);
+  --p-message-secondary-border-color: transparent;
+
+  // Toasts
+  --p-toast-success-background: color-mix(in srgb, var(--p-green-950), transparent 50%);
+  --p-toast-warn-background: color-mix(in srgb, var(--p-yellow-950), transparent 50%);
+  --p-toast-error-background: color-mix(in srgb, var(--p-red-950), transparent 50%);
+  --p-toast-detail-font-weight: unset;
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Jost;
+  src: url('./fonts/jost.woff2') format('woff2-variations');
+  font-weight: 300 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url('./fonts/jost-italic.woff2') format('woff2-variations');
+  font-weight: 300 500;
+  font-style: italic;
+}
+
+kbd,
+code,
+pre {
+  font-family: 'Victor Mono', monospace;
+}
