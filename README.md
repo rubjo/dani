@@ -73,7 +73,7 @@ Fork it, modify it any way you like and consider a [donation](https://www.paypal
 
 ## Why did you make this?
 This was made to present a rather ambitious JavaScript library I was working on. Then, life happened, with ups and downs. I realised that while the library wasn't going to see daylight, I could with little effort share the site framework itself to others. It's part of my bucket list of creative things to accomplish and share before dying (happily):
-- [x] Draw a programming font from scratch:[Victor Mono](https://rubjo.github.io/victor-mono/)
+- [x] Draw a programming font from scratch: [Victor Mono](https://rubjo.github.io/victor-mono/)
 - [x] Create a software development resource (this one)
 - [ ] Compose, perform and record music
 - [ ] Learn to draw and paint and make art
