@@ -116,7 +116,7 @@ Some of the many libraries and resources used:
 - My editor theme Ultimate Dark Neo for [VS Code](https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo&ssr=false#overview), [Sublime Text](https://packagecontrol.io/packages/Ultimate%20Dark%20Neo) and [Zed](https://github.com/rubjo/ultimate-dark-neo-zed)
 
 ## Thanks
-You're welcome. [Donations are very much appreciated](https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW), if you should be so inclined. Also, I welcome PRs to improve the usefulness of Dani overall.
+You're welcome. [Donations are very much appreciated](https://www.paypal.com/donate/?hosted_button_id=TMFX64KS4NWCC), if you should be so inclined. Also, I welcome PRs to improve the usefulness of Dani overall.
 
 <hr>
 
