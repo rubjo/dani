@@ -4,6 +4,7 @@
 
 * [What is this?](#what-is-this)
 * [What does this look like?](#what-does-this-look-like)
+    * [rubjo.github.io/dani/](#rubjogithubiodani)
 * [Who is this for?](#who-is-this-for)
 * [How do I get started?](#how-do-i-get-started)
 * [What are some included features?](#what-are-some-included-features)
@@ -23,7 +24,7 @@ A starting point for developing, documenting and showcasing your JavaScript libr
 When you're ready, one command bundles and minifies your JS library (in `/dist`) and makes a deployment-ready version of your site (in `/site/dist`) in one go. You can then publish your library and deploy your site using whatever method or channel you prefer.
 
 ## What does this look like?
-www.example.com
+### [rubjo.github.io/dani/](https://rubjo.github.io/dani/)
 
 ## Who is this for?
 Anyone making a JavaScript library who also wants to have a user-friendly demo / docs site. It's ideal if you want:
