@@ -34,7 +34,7 @@ Anyone making a JavaScript library who also wants to have a user-friendly demo /
 - an easy way to show different options
 - your users to try out your library in the browser
 
-Fork it, modify it any way you like and consider a [donation](https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW) if you feel it has helped you. The site uses Vue as a UI component library, so knowledge about that framework is an advantage.       
+Fork it, modify it any way you like and consider a [donation](https://www.paypal.com/donate/?hosted_button_id=TMFX64KS4NWCC) if you feel it has helped you. The site uses Vue as a UI component library, so knowledge about that framework is an advantage.       
 
 ## How do I get started?
 1. Fork this repo
