@@ -81,7 +81,7 @@
   })
 
   const DemoComponent = defineAsyncComponent(
-    () => import(/* @vite-ignore */ '../demos/' + props.demo + '.vue'),
+    () => import(`../demos/${props.demo}.vue`),
   )
 
   const originalCode = ref('')
