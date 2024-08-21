@@ -92,6 +92,8 @@
   }
 
   store.$subscribe((mutation, state) => {
+    console.log(mutation)
+    console.log(state)
     const appearanceChanged = ['paletteModel', 'hue', 'sat', 'lux'].includes(
       mutation.events?.key,
     )
