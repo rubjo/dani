@@ -21,6 +21,7 @@ export default defineConfig({
       },
     },
   },
+  base: '/dani/', // Probably change or remove this when deploying your site
   plugins: [
     vue({
       template: {

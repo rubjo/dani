@@ -47,7 +47,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory('/dani/'), // Probably change or remove this when deploying your site
   routes,
 })
 
