@@ -93,7 +93,7 @@
 
   store.$subscribe((mutation, state) => {
     const appearanceChanged = ['paletteModel', 'hue', 'sat', 'lux'].includes(
-      mutation.events.key,
+      mutation.events?.key,
     )
 
     if (appearanceChanged) setTheme()
