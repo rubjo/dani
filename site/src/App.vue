@@ -51,6 +51,8 @@
   //                                     MM
   //                                   .JMML.
 
+  import { watch } from 'vue'
+
   import PToast from 'primevue/toast'
   import PButton from 'primevue/button'
 
@@ -91,15 +93,12 @@
     setTheme()
   }
 
-  store.$subscribe((mutation, state) => {
-    console.log(mutation)
-    console.log(state)
-    const appearanceChanged = ['paletteModel', 'hue', 'sat', 'lux'].includes(
-      mutation.events?.key,
-    )
-
-    if (appearanceChanged) setTheme()
-  })
+  watch(
+    () => [store.paletteModel, store.hue, store.sat, store.lux],
+    () => {
+      setTheme()
+    },
+  )
 
   const init = async () => {
     await Promise.all([loadSettings()])
