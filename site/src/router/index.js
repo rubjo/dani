@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 import StartView from '../views/StartView.vue'
 import InstallView from '../views/InstallView.vue'
@@ -47,7 +47,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/dani/'), // Probably change or remove this when deploying your site
+  history: createWebHashHistory('/dani/'), // Probably change or remove this when deploying your site
   routes,
 })
 

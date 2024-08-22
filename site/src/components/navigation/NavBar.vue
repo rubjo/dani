@@ -4,7 +4,7 @@
       <transition name="fade">
         <div v-if="isOnTop">
           <router-link to="/" custom>
-            <h2 class="m-0 text-white">My JS Lib</h2>
+            <h2 class="m-0 text-white">Dani</h2>
           </router-link>
         </div>
       </transition>
@@ -212,6 +212,13 @@
       &:enabled:hover {
         background: rgba(0, 0, 0, 0.25);
       }
+    }
+  }
+
+  @media screen and (width <= 768px) {
+    .navbar {
+      margin-top: -3.5rem;
+      height: 3.5rem;
     }
   }
 

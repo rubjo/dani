@@ -14,7 +14,7 @@ export const codeEditorView = EditorView.theme(
     '.cm-content': {
       caretColor: 'var(--high-contrast)',
       fontFamily: 'var(--font-family-mono)',
-      fontSize: '18px',
+      fontSize: '0.8rem',
       zIndex: 201,
     },
 
@@ -49,7 +49,7 @@ export const codeEditorView = EditorView.theme(
       color: 'var(--muted)',
       border: 'none',
       fontFamily: 'var(--font-family-mono)',
-      fontSize: '18px',
+      fontSize: '0.8rem',
     },
 
     '.cm-lineNumbers': {
@@ -73,7 +73,7 @@ export const codeEditorView = EditorView.theme(
     '.cm-tooltip': {
       border: 'none',
       backgroundColor: 'var(--code-tooltip)',
-      fontSize: '18px',
+      fontSize: '0.8rem',
     },
     '.cm-tooltip.cm-tooltip-autocomplete': {
       marginTop: '2px',

@@ -53,6 +53,7 @@
   --p-message-secondary-border-color: transparent;
 
   // Toasts
+  --p-toast-width: min(480px, 85vw);
   --p-toast-success-background: color-mix(in srgb, var(--p-green-950), transparent 50%);
   --p-toast-warn-background: color-mix(in srgb, var(--p-yellow-950), transparent 50%);
   --p-toast-error-background: color-mix(in srgb, var(--p-red-950), transparent 50%);

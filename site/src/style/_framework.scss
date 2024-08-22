@@ -69,6 +69,10 @@ h3 {
 }
 
 @media screen and (width <= 768px) {
+  html {
+    font-size: 120%;
+  }
+
   .content {
     margin-left: 0;
     padding: 0 1rem 5rem;

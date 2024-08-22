@@ -20,6 +20,7 @@ export default class SimpleZoom {
     this.domEl.classList.add('active')
     this.domEl.simpleZoom = this
 
+    // So this doesn't work particularly well on mobile, but meh
     this.domEl.addEventListener('mousemove', this.zoom)
     this.domEl.addEventListener('mousedown', this.doubleZoomOn)
     this.domEl.addEventListener('mouseup', this.doubleZoomOff)

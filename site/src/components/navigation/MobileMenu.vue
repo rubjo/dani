@@ -1,88 +1,93 @@
 <template>
   <nav class="mobile-menu flex text-center">
-    <router-link
+    <template
       v-for="entry in mobileMenuEntries"
       :key="entry.title"
       :to="entry.href"
-      class="router-link col"
     >
-      <div
-        class="entry-wrapper"
-        @mouseover="showChildren"
-        @mouseout="hideChildren"
+      <component
+        :is="entry.href ? 'router-link' : 'div'"
+        :to="entry.href"
+        class="router-link col"
       >
-        <span class="icon">
-          <component :is="entry.icon.element" />
-        </span>
-        <span class="block">
-          <span v-if="entry.localized">
-            <span v-if="entry.shortTitle">
-              {{ $t(entry.shortTitle) }}
-            </span>
-            <span v-else>
-              {{ $t(entry.title) }}
-            </span>
-          </span>
-          <span v-else>
-            <span v-if="entry.shortTitle">
-              {{ entry.shortTitle }}
-            </span>
-            <span v-else>
-              {{ entry.title }}
-            </span>
-          </span>
-        </span>
         <div
-          v-if="entry.child && entry.child.length"
-          class="children"
-          @click="hideChildren"
+          class="entry-wrapper"
+          @mouseover="showChildren"
+          @mouseout="hideChildren"
         >
-          <div v-for="child in entry.child" :key="child.title" class="child">
-            <router-link
-              v-if="child.href"
-              :to="child.href"
-              class="router-link col"
-            >
-              <span class="icon">
-                <component :is="child.icon.element" />
-              </span>
-              <span v-if="child.localized">
-                {{ $t(child.title) }}
+          <span class="icon">
+            <component :is="entry.icon.element" />
+          </span>
+          <span class="block">
+            <span v-if="entry.localized">
+              <span v-if="entry.shortTitle">
+                {{ $t(entry.shortTitle) }}
               </span>
               <span v-else>
-                {{ child.title }}
+                {{ $t(entry.title) }}
               </span>
-            </router-link>
-            <div
-              v-if="child.child && child.child.length"
-              class="grand-children"
-            >
-              <div
-                v-for="grandChild in child.child"
-                :key="grandChild.title"
-                class="grand-child"
+            </span>
+            <span v-else>
+              <span v-if="entry.shortTitle">
+                {{ entry.shortTitle }}
+              </span>
+              <span v-else>
+                {{ entry.title }}
+              </span>
+            </span>
+          </span>
+          <div
+            v-if="entry.child && entry.child.length"
+            class="children"
+            @click="hideChildren"
+          >
+            <div v-for="child in entry.child" :key="child.title" class="child">
+              <router-link
+                v-if="child.href"
+                :to="child.href"
+                class="router-link col"
               >
-                <router-link
-                  v-if="grandChild.href"
-                  :to="grandChild.href"
-                  class="router-link col"
+                <span class="icon">
+                  <component :is="child.icon.element" />
+                </span>
+                <span v-if="child.localized">
+                  {{ $t(child.title) }}
+                </span>
+                <span v-else>
+                  {{ child.title }}
+                </span>
+              </router-link>
+              <div
+                v-if="child.child && child.child.length"
+                class="grand-children"
+              >
+                <div
+                  v-for="grandChild in child.child"
+                  :key="grandChild.title"
+                  class="grand-child"
                 >
-                  <span class="icon">
-                    <component :is="grandChild.icon.element" />
-                  </span>
-                  <span v-if="grandChild.localized">
-                    {{ $t(grandChild.title) }}
-                  </span>
-                  <span v-else>
-                    {{ grandChild.title }}
-                  </span>
-                </router-link>
+                  <router-link
+                    v-if="grandChild.href"
+                    :to="grandChild.href"
+                    class="router-link col"
+                  >
+                    <span class="icon">
+                      <component :is="grandChild.icon.element" />
+                    </span>
+                    <span v-if="grandChild.localized">
+                      {{ $t(grandChild.title) }}
+                    </span>
+                    <span v-else>
+                      {{ grandChild.title }}
+                    </span>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </router-link>
+      </component>
+    </template>
   </nav>
 </template>
 
@@ -215,9 +220,9 @@
       }
     }
 
-    > a {
+    > .router-link {
       padding: 0;
-      font-size: 75%;
+      font-size: 80%;
       font-weight: 500;
       color: var(--text-primary);
       min-width: 50px;
@@ -229,12 +234,12 @@
         padding: 10px 5px;
       }
 
-      &.router-link-exact-active {
-        color: var(--text-primary);
+      &.router-link-exact-active,
+      :has(.router-link-exact-active) {
+        font-weight: 700;
       }
 
       &:hover {
-        color: var(--text-primary);
         background: var(--bg-navbar-primary-hover);
       }
     }
@@ -280,8 +285,13 @@
         display: flex;
         align-items: center;
         min-width: 300px;
+        font-weight: 300;
         color: var(--text-primary);
         text-decoration: none;
+
+        &.router-link-exact-active {
+          font-weight: 700;
+        }
       }
     }
 
