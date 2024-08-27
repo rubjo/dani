@@ -1,4 +1,4 @@
-import{_ as m,K as i,n as r,o as p,L as d,c as u,e as g,i as e,t as a,z as f,F as h}from"./index-CJ4opmwL.js";const n="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&w=1600",_={__name:"DemoBlockDemo",emits:["demo-loaded"],setup(k,{emit:c}){const{t:o,locale:v,messages:y}=i(),t=r(()=>`const catZoom = new SimpleZoom('.cat', {
+import{_ as m,K as i,n as r,o as p,L as d,c as u,e as g,i as e,t as a,z as f,F as h}from"./index-DcJZ8Mir.js";const n="https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&w=1600",_={__name:"DemoBlockDemo",emits:["demo-loaded"],setup(k,{emit:c}){const{t:o,locale:v,messages:y}=i(),t=r(()=>`const catZoom = new SimpleZoom('.cat', {
   hoverScale: '200%', // ${o("magnifyTo2XOnHover")}
   clickScale: '800%' // ${o("magnifyTo8XOnMousedown")}
   // clickScale: '1000px' // ${o("canBeAbsoluteSize")}
