@@ -17,7 +17,7 @@
           <span class="hidden md:flex">
             <kbd class="inline-flex align-items-center">
               <IconCommand v-if="os === 'macOS'" />
-              <IconBrandWindows v-if="os === 'Windows'" />
+              <span v-else>CTRL</span>
               <span class="mx-1">+</span>
               <span class="activator-key">K</span>
             </kbd>
@@ -131,7 +131,6 @@
     IconCommand,
     IconSearch,
     IconLanguage,
-    IconBrandWindows,
   } from '@tabler/icons-vue'
 
   import { setI18nLanguage } from '../../i18n'
